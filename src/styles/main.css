@@ -4,6 +4,55 @@
   box-sizing: border-box;
 }
 
+:root {
+  --logo-clr: #e5cf00;
+  --bg-clr: linear-gradient(-130deg, #0047ff, #5800af);
+}
+
 body {
   font-family: 'Poppins', sans-serif;
+  background-image: var(--bg-clr);
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+header .logo {
+  margin-top: 20px;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--logo-clr);
+  text-align: center;
+}
+
+.game {
+  margin-top: 50px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  align-items: center;
+  row-gap: 25px;
+  color: #fff;
+  background-color: #ffffff44;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.game img {
+  border-radius: 8px;
+}
+
+.game__play {
+  width: 100%;
+  border: 0;
+  padding: 1rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
 }
