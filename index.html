@@ -13,7 +13,7 @@
     <title>GeoBattles</title>
   </head>
   <body>
-    <div id="container">
+    <div id="container" class="hidden">
       <header><h1 class="logo">GeoBattles</h1></header>
       <main>
         <section class="game">
@@ -23,5 +23,26 @@
         </section>
       </main>
     </div>
+    <!-- <template class="question__template"> -->
+    <div class="time-counter">
+      <div class="counter">
+        <div class="elapsed-time"></div>
+      </div>
+    </div>
+    <section class="question">
+      <h1 class="question__title">Which country is this flag?</h1>
+      <img
+        src="./src/assets/flags/poland.svg"
+        alt="flag"
+        class="question__flag"
+      />
+      <div class="question__options">
+        <button class="question__option">A. Poland</button>
+        <button class="question__option">B. Italy</button>
+        <button class="question__option">C. Romania</button>
+        <button class="question__option">D. France</button>
+      </div>
+    </section>
+    <!-- </template> -->
   </body>
 </html>

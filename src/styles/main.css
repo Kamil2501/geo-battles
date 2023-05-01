@@ -13,10 +13,19 @@ body {
   font-family: 'Poppins', sans-serif;
   background-image: var(--bg-clr);
   min-height: 100vh;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
 }
 
 img {
   width: 100%;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
 }
 
 header .logo {
@@ -36,7 +45,6 @@ header .logo {
   width: 75%;
   align-items: center;
   row-gap: 25px;
-  color: #fff;
   background-color: #ffffff44;
   padding: 30px;
   border-radius: 8px;
@@ -53,6 +61,60 @@ header .logo {
   font-size: 1.4rem;
   cursor: pointer;
   background-color: transparent;
-  color: #fff;
   font-weight: 700;
+}
+
+.time-counter {
+  display: flex;
+  padding: 15px;
+}
+
+.counter {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  border-radius: 100vmax;
+  background-color: #ffffff44;
+}
+
+.elapsed-time {
+  position: absolute;
+  width: 0%;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  background-color: yellow;
+  border-radius: 100vmax;
+}
+
+.question {
+  margin-inline: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  row-gap: 30px;
+}
+
+.question__title {
+  text-align: center;
+}
+
+.question__flag {
+  border-radius: 8px;
+}
+
+.question__options {
+  display: grid;
+  row-gap: 10px;
+}
+
+.question__option {
+  width: 100%;
+  background-color: #ffffff44;
+  padding: 13px;
+  border-radius: 8px;
+  border: 0;
+  color: #fff;
+  text-align: start;
 }
